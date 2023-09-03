@@ -43,3 +43,18 @@ To get this application up and running, follow these steps:
    cd Task-Management-System
 ```
 2. Install the required dependencies:
+ ```bash
+    npm install
+ ```
+3. Start the application:
+- For production:
+
+  ```
+  npm start
+  ```
+
+- For development (with nodemon for automatic server restart):
+
+  ```
+  npm run dev
+  ```
