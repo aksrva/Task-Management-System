@@ -60,7 +60,7 @@ To get this application up and running, follow these steps:
   ```
 
 4. Access the application in your web browser at `http://localhost:3000`.
-5. Live Access (click)[https://task-management.cyclic.app/]
+5. Live Access [click](https://task-management.cyclic.app/)
 
 ## Screenshots
 ![Screenshot 1](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104815.png)
