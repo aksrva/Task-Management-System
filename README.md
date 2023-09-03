@@ -58,3 +58,10 @@ To get this application up and running, follow these steps:
   ```
   npm run dev
   ```
+
+4. Access the application in your web browser at `http://localhost:3000`.
+
+## Screenshots
+![Screenshot 1](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104815.png)
+![Screenshot 2](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104920.png)
+![Screenshot 3](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104942.png)
