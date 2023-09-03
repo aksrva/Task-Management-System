@@ -38,7 +38,8 @@ Welcome to the Task Management System! This application is designed to help you 
 To get this application up and running, follow these steps:
 
 1. Clone the repository:
-'''
-git clone <repository-url>
-cd <repository-directory>
-'''
+ ```bash
+   git clone https://github.com/aksrva/Task-Management-System.git
+   cd Task-Management-System
+```
+2. Install the required dependencies:
