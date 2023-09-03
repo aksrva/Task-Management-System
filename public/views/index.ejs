@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="task-section">
+        <div class="todo-list task-list">
+          <div class="header">
+            <h2>Todo Task</h2>
+            <button class="new-task">➕</button>
+          </div>
+          <div class="tasks" id="todo">
+            <% for (const task of todo) { %>
+            <div class="task" data-id="<%= task._id %>" draggable="true">
+              <p class="task-title"><%= task.task %></p>
+              <p><%= task.task_description %></p>
+              <a
+                onclick="deleteTask('<%= task._id  %>', '0')"
+                class="task-del"
+                href="javascript:void(0)"
+                >❌</a
+              >
+              <a
+                onclick="updateTask('<%= task._id  %>', '<%= task.task%>','<%= task.task_description  %>', 0)"
+                class="task-del"
+                href="javascript:void(0)"
+                >📝</a
+              >
+            </div>
+            <% } %>
+          </div>
+          <div class="add-task">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea name="new-form" placeholder="Write the task"></textarea>
+            <button class="submit-form form-btn">✔️</button>
+            <button class="close-form form-btn">❌</button>
+          </div>
+          <div class="edit-task">
+            <input
+              type="text"
+              name="edtitle"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea
+              class="editDesc"
+              placeholder="Write task description"
+            ></textarea>
+            <button class="edit-form form-btn">✔️</button>
+            <button class="edit-close-form form-btn">❌</button>
+          </div>
+        </div>
+        <div class="doing-list task-list">
+          <div class="header">
+            <h2>Doing Task</h2>
+            <button class="new-task">➕</button>
+          </div>
+          <div class="tasks" id="doing">
+            <% for (const task of doing) { %>
+            <div class="task" data-id="<%= task._id %>" draggable="true">
+              <p class="task-title"><%= task.task %></p>
+              <p><%= task.task_description %></p>
+              <a
+                onclick="deleteTask('<%= task._id  %>', '1')"
+                class="task-del"
+                href="javascript:void(0)"
+                >❌</a
+              >
+              <a
+                onclick="updateTask('<%= task._id  %>', '<%= task.task%>','<%= task.task_description  %>', 1)"
+                class="task-del"
+                href="javascript:void(0)"
+                >📝</a
+              >
+            </div>
+            <% } %>
+          </div>
+          <div class="add-task">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea name="new-form" placeholder="Write the task"></textarea>
+            <button class="submit-form form-btn">✔️</button>
+            <button class="close-form form-btn">❌</button>
+          </div>
+          <div class="edit-task">
+            <input
+              type="text"
+              name="edtitle"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea
+              class="editDesc"
+              placeholder="Write task description"
+            ></textarea>
+            <button class="edit-form form-btn">✔️</button>
+            <button class="edit-close-form form-btn">❌</button>
+          </div>
+        </div>
+        <div class="done-list task-list">
+          <div class="header">
+            <h2>Done Task</h2>
+            <button class="new-task">➕</button>
+          </div>
+          <div class="tasks" id="done">
+            <% for (const task of done) { %>
+            <div class="task" data-id="<%= task._id %>" draggable="true">
+              <p class="task-title"><%= task.task %></p>
+              <p><%= task.task_description %></p>
+              <a
+                onclick="deleteTask('<%= task._id  %>', '<%= task.task%>','<%= task.task_description  %>')"
+                class="task-del"
+                href="javascript:void(0)"
+                >❌</a
+              >
+              <a
+                onclick="updateTask('<%= task._id  %>', '<%= task.task%>','<%= task.task_description  %>', 2)"
+                class="task-del"
+                href="javascript:void(0)"
+                >📝</a
+              >
+            </div>
+            <% } %>
+          </div>
+          <div class="add-task">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea name="new-form" placeholder="Write task description"></textarea>
+            <button class="submit-form form-btn">✔️</button>
+            <button class="close-form form-btn">❌</button>
+          </div>
+          <div class="edit-task">
+            <input
+              type="text"
+              name="edtitle"
+              id="title"
+              placeholder="Enter task Title"
+            />
+            <textarea
+              class="editDesc"
+              placeholder="Write task description"
+            ></textarea>
+            <button class="edit-form form-btn">✔️</button>
+            <button class="edit-close-form form-btn">❌</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

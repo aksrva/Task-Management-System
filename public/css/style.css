@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  background: #f0f5f9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 10px;
+  margin: 2vw auto;
+  position: relative;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.task-section {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tasks {
+  padding: 10px 0;
+}
+.new-task {
+  font-size: 15px;
+  padding: 0 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.task-list {
+  flex: 1 0 200px;
+  background: #c9d6df;
+  padding: 1.5vw;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #bfc7d1;
+}
+.task-list h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0.5vw;
+}
+.task {
+  background: #e1e4e6;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #bfc7d1;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+.task-title {
+  font-weight: bold;
+}
+.task:active {
+  cursor: grab;
+}
+.task.hide {
+  display: none;
+}
+.task a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1vw;
+  font-size: 13px;
+}
+.add-task,
+.edit-task {
+  display: none;
+  position: relative;
+}
+.add-task input,
+.edit-task input {
+  display: block;
+  width: 85%;
+  margin-top: 0.3vw;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  resize: none;
+  outline: none;
+  background: #e1e4e6;
+}
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  height: 70px;
+  margin-top: 0.3vw;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  background: #e1e4e6;
+}
+.form-btn {
+  color: rgb(188, 9, 9);
+  border: none;
+  padding: 0 5px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  font-size: 10px;
+}
+.close-form,
+.edit-close-form {
+  top: 5px;
+  right: -4px;
+}
+.submit-form,
+.edit-form {
+  top: 5px;
+  right: 12px;
+}
