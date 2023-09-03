@@ -29,7 +29,6 @@ closeEditForm.forEach((closebtn, idx) => {
 const submitForm = document.querySelectorAll(".submit-form");
 submitForm.forEach((sbmtBtn, idx) => {
   sbmtBtn.addEventListener("click", () => {
-    console.log(taskForm[idx].value)
     if (taskForm[idx].value === "") return;
     const request = new XMLHttpRequest();
     request.open("POST", "/", true);
@@ -48,7 +47,6 @@ submitForm.forEach((sbmtBtn, idx) => {
         alert("ERROR -> " + request.response);
       }
     });
-    taskForm[idx].value = "";
   });
 });
 

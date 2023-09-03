@@ -17,15 +17,12 @@ app.use(
 app.set("view engine", "ejs");
 app.set("views", absPath + "/views");
 // connect database
-const url = "mongodb://127.0.0.1:27017/kanban-task-management";
-mongoose
-  .connect(url)
-  .then(() => {
-    console.log("Connected");
-  })
-  .catch((err) => {
-    console.log("Database Connection Failed -> " + err.message);
-  });
+
+async function main(){
+  await mongoose.connect(`mongodb+srv://tmssystem:TJyFVbm3nipbipY8@tms.6hi1b0i.mongodb.net/taskmanagementsystem?retryWrites=true&w=majority`);
+  console.log("Server connected");
+}
+main().catch(err => console.log("Database error : " + err));
 
 const taskSchema = new mongoose.Schema({
   task: { type: String, required: true },
