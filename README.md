@@ -65,3 +65,7 @@ To get this application up and running, follow these steps:
 ![Screenshot 1](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104815.png)
 ![Screenshot 2](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104920.png)
 ![Screenshot 3](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104942.png)
+![Screenshot 4](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20104958.png)
+![Screenshot 5](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20105005.png)
+![Screenshot 6](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20105014.png)
+![Screenshot 7](https://raw.githubusercontent.com/aksrva/screenshots/main/task-management-screenshots/Screenshot%202023-09-03%20105026.png)
